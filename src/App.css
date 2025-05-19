@@ -610,19 +610,13 @@ img {
 
 /* Responsive Styles */
 
-@media (max-width: 996px) {
-  .mission-vision-values {
-    flex-direction: column;
-  }
-}
-
 @media (max-width: 992px) {
   .hero-content h1 {
     font-size: 2.5rem;
   }
 
   .mission-vision-values {
-    grid-template-columns: repeat(2, 1fr);
+    flex-direction: column;
   }
 }
 
