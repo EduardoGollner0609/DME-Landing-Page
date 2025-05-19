@@ -616,13 +616,7 @@ img {
   }
 
   .mission-vision-values {
-    flex-direction: column;
-  }
-
-  .mission,
-  .values,
-  .vision {
-    max-width: 320px;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
