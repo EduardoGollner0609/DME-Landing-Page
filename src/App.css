@@ -618,6 +618,12 @@ img {
   .mission-vision-values {
     flex-direction: column;
   }
+
+  .mission,
+  .values,
+  .vision {
+    max-width: 320px;
+  }
 }
 
 @media (max-width: 880px) {
