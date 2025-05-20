@@ -67,8 +67,8 @@ function App() {
           email: '',
           whatsapp: ''
         });
-      })
-      .catch(error => console.log(error));
+      });
+      
   };
 
   return (
