@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
+import emailjs from '@emailjs/browser';
 import { FaWhatsapp, FaEnvelope, FaPhone, FaMapMarkerAlt, FaInstagram, FaBullseye, FaEye, FaHandsHelping } from 'react-icons/fa';
 import { RiMenu3Line } from 'react-icons/ri';
 
@@ -51,37 +52,23 @@ function App() {
     e.preventDefault();
     setFormStatus('sending');
 
-    try {
-      // Usando um serviço de formulário como Formspree para enviar e-mail
-      const response = await fetch('https://formspree.io/f/xdoqbwzj', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          ...formData,
-          _replyto: formData.email,
-          _subject: 'Novo pedido de orçamento do site DME',
-          _cc: 'vendas@dmedistribuidora.com.br' // Garantindo que o e-mail correto receba a mensagem
-        })
-      });
+    const templateParams = {
+      document: formData.document,
+      email: formData.email,
+      whatsapp: formData.whatsapp,
+    }
 
-      if (response.ok) {
+    emailjs.send("service_x4aekom", "template_w2ryrlr", templateParams, "eZP-xtbKgp5cm93f_")
+      .then(response => {
+        console.log(response)
         setFormStatus('success');
         setFormData({
           document: '',
           email: '',
           whatsapp: ''
         });
-        setTimeout(() => setFormStatus(''), 5000);
-      } else {
-        setFormStatus('error');
-        setTimeout(() => setFormStatus(''), 5000);
-      }
-    } catch (error) {
-      setFormStatus('error');
-      setTimeout(() => setFormStatus(''), 5000);
-    }
+      })
+      .catch(error => console.log(error));
   };
 
   return (
