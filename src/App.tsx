@@ -68,7 +68,7 @@ function App() {
           whatsapp: ''
         });
       });
-      
+
   };
 
   return (
@@ -170,15 +170,44 @@ function App() {
           <p className="section-subtitle">Trabalhamos com as melhores marcas do mercado para garantir qualidade e confiabilidade.</p>
           <div className="partners-grid">
             <div className="partner-logo">
-              <img src="/images/partner-descarpack.png" alt="Descarpack" />
+              <img src="/images/parceiros/Ems-sem-fundo-logo.png" alt="Ems logo" />
             </div>
             <div className="partner-logo">
-              <img src="/images/partner-cremer.png" alt="Cremer" />
+              <img src="/images/parceiros/Fresenius_Kabi_Logo.svg.png" alt="Fresenius Kabi logo" />
             </div>
             <div className="partner-logo">
-              <img src="/images/partner-medix.png" alt="Medix" />
+              <img src="/images/parceiros/Hoffmann-La_Roche_logo.svg.png" alt="Hoffman Roche logo" />
             </div>
-            {/* Espaço para mais logos de parceiros */}
+            <div className="partner-logo">
+              <img src="/images/parceiros/Logo_Kolplast_Horizontal_2023_SEM_FUNDO-938-216.png" alt="Kolplast logo" />
+            </div>
+            <div className="partner-logo">
+              <img src="/images/parceiros/logo-hipolabor-en-1036x283.png" alt="Hipolabor logo" />
+            </div>
+            <div className="partner-logo">
+              <img src="/images/parceiros/Logotipo_do_Laboratório_Teuto.svg.png" alt="Teuto logo" />
+            </div>
+            <div className="partner-logo">
+              <img src="/images/parceiros/Novo_Biolab_Farma.jpg" alt="Biolab logo" />
+            </div>
+            <div className="partner-logo">
+              <img src="/images/parceiros/icon.webp" alt="TKL logo" />
+            </div>
+            <div className="partner-logo">
+              <img src="/images/parceiros/b951ac_0c39802482124d1383c28073f7bf1605~mv2.png" alt="Amed logo" />
+            </div>
+            <div className="partner-logo">
+              <img src="/images/parceiros/clean-up.png" alt="Clean Up logo" />
+            </div>
+            <div className="partner-logo">
+              <img src="/images/parceiros/imgp_cristalia_fabricante_grande.jpg" alt="Cristália logo" />
+            </div>
+            <div className="partner-logo">
+              <img src="/images/parceiros/lebon-farma.png" alt="Lebon Farma logo" />
+            </div>
+            <div className="partner-logo">
+              <img src="/images/parceiros/images.png" alt="GeoLab logo" />
+            </div>
           </div>
         </div>
       </section>
@@ -301,7 +330,7 @@ function App() {
                 <h3>Quais formas de pagamento são aceitas?</h3>
               </div>
               <div className="faq-answer">
-                <p>Aceitamos PIX, transferência bancária, boleto e condições especiais para compras recorrentes (sob consulta).</p>
+                <p>Aceitamos transferência bancária, boleto, cartão de crédito, PIX e condições especiais para compras recorrentes (sob consulta).</p>
               </div>
             </div>
             <div className="faq-item">
@@ -388,7 +417,7 @@ function App() {
           </div>
 
           <div className="footer-bottom">
-            <p>&copy; {new Date().getFullYear()} DME - Distribuição de Materiais Médico-Hospitalares. Todos os direitos reservados.</p>
+            <p>&copy; {new Date().getFullYear()} DME - Distribuidora de Materiais Médico-Hospitalares. Todos os direitos reservados.</p>
           </div>
         </div>
       </footer>
